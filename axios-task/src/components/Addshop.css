@@ -1,0 +1,41 @@
+.add {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements horizontally */
+    margin-top: 20px; /* Add margin around the form */
+    margin-right:400px;
+    margin-left:400px;
+    padding: 20px; /* Add padding inside the form */
+    border: 1px solid #ccc; /* Border around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    background-color:white; /* Light background color */
+  }
+  
+  .add-title {
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .add-input {
+    margin-bottom: 15px; /* Space below each input */
+    width: 100%; /* Make inputs full-width */
+    max-width: 400px; /* Limit max width of inputs */
+  }
+  
+  .add-button {
+    margin-top: 10px; /* Space above the button */
+    width: 100%; /* Make button full-width */
+    max-width: 200px; /* Limit max width of the button */
+  }
+  
+  @media (max-width: 600px) {
+    .add {
+        margin: 10px; /* Adjust margin for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .add-input, .add-button {
+        width: 90%; /* Make inputs and buttons responsive */
+    }
+  }
+  

@@ -1,0 +1,41 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Space out the cards evenly */
+    padding: 40px; /* Optional padding */
+  }
+  
+  .card-item {
+    flex: 1 1 calc(33.333% - 16px); /* 3 items per row */
+    margin: 20px; /* Space between cards */
+    box-sizing: border-box; /* Include padding/border in the total width */
+    display: flex; /* Enable flex on card item */
+    flex-direction: column; /* Stack content vertically */
+  }
+  
+  .card {
+    flex: 1; /* Allow the card to take full height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for transform and box-shadow */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Allow content area to grow and fill the card */
+  }
+  
+  .card-media {
+    transition: opacity 0.3s ease; /* Transition for image opacity */
+  }
+  
+  .card-media:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+  }
+  
+  .card-item:last-child {
+    margin-right: 0; /* Remove right margin on the last card */
+  }
+  
