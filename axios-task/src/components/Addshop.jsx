@@ -66,7 +66,7 @@ const AddShop = () => {
   return (
     <Container sx={{ paddingTop: 4 }} className="add">
       <Typography variant="h4" className="add-title" color="red">
-        Add Shop
+        AddDetails
       </Typography>
       <form onSubmit={handleSubmit}>
         <TextField
